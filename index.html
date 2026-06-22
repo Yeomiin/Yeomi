@@ -43,7 +43,7 @@
             border-bottom: 1px dashed rgba(226, 156, 167, 0.4);
         }
 
-        /* Header */
+        /* Header Layout with Logo Image */
         header {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
@@ -58,20 +58,14 @@
             box-shadow: 0 4px 20px rgba(226, 156, 167, 0.08);
         }
 
-        .brand-logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            letter-spacing: 3px;
-            font-weight: 500;
-            color: var(--text-charcoal);
+        .logo-container {
+            text-align: center;
         }
 
-        .brand-logo-sub {
-            font-size: 10px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #8C7E80;
-            margin-top: -4px;
+        .brand-logo-img {
+            height: 65px;
+            object-fit: contain;
+            border-radius: 50px;
         }
 
         /* Hero Section */
@@ -99,7 +93,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Torn border divider */
+        /* Torn border divider style */
         .torn-divider {
             position: absolute;
             bottom: 0;
@@ -207,7 +201,7 @@
             line-height: 1.4;
         }
 
-        /* Aesthetic Action Link */
+        /* Action Link */
         .action-link {
             display: inline-block;
             border-bottom: 1px solid var(--text-charcoal);
@@ -226,7 +220,7 @@
             border-color: var(--accent-rose);
         }
 
-        /* Floating WhatsApp Icon */
+        /* Floating WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -251,6 +245,12 @@
             padding: 50px 5% 30px;
             text-align: center;
             border-top: 1px solid rgba(226, 156, 167, 0.15);
+        }
+
+        .footer-logo {
+            height: 50px;
+            margin-bottom: 15px;
+            border-radius: 50px;
         }
 
         .insta-handle {
@@ -282,26 +282,26 @@
 </head>
 <body>
 
-    <!-- Top Bar -->
+    <!-- Top Announcement Line -->
     <div class="top-bar">
         🎀 CUTE & AESTHETIC PRODUCTS • PAN INDIA SHIPPING • DM TO ORDER 🎀
     </div>
 
-    <!-- Header -->
+    <!-- Header containing your specific brand sticker logo artwork -->
     <header>
-        <div style="text-align: center;">
-            <div class="brand-logo-text">YEOMI 🎀</div>
-            <div class="brand-logo-sub">Cute things, happy hearts</div>
+        <div class="logo-container">
+            <img src="IMG_6376.jpg" alt="YEOMI Logo" class="brand-logo-img" onerror="this.src='https://via.placeholder.com/150x65/fff/e29ca7?text=YEOMI'">
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Area -->
     <div class="hero-section">
         <p style="text-transform: uppercase; font-size: 11px; letter-spacing: 3px; color: var(--accent-rose); font-weight: 600; margin-bottom: 5px;">New Arrivals</p>
         <h1>Pop of Sunshine Collection</h1>
         <p>Explore your ultimate destination for high-quality, adorable everyday accessories, bags, and lifestyle essentials.</p>
         <a href="https://wa.me/919413554253" target="_blank" class="action-link">Message To Order</a>
 
+        <!-- Organic layout wave line -->
         <div class="torn-divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,42.4V0Z" class="shape-fill"></path>
@@ -309,18 +309,17 @@
         </div>
     </div>
 
-    <!-- Main Product Grid -->
+    <!-- Main Dynamic Gallery Block -->
     <div class="grid-container">
         <div class="section-header-tag">Handpicked for you</div>
         <div class="section-main-title">Our Cute Catalog</div>
 
         <div class="product-grid">
             
-            <!-- Product 1: Yellow Duck Keychain -->
+            <!-- Item 1: Yellow Costume Keychain -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Pehli photo (Yellow Cat/Duck Costume Keychain) -->
-                    <img src="product1.jpg" alt="Yellow Costume Keychain">
+                    <img src="IMG_6451.jpeg.JPG" alt="Yellow Costume Keychain" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Keychain'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Chibi Costume Keychain</h3>
@@ -329,11 +328,10 @@
                 </div>
             </div>
 
-            <!-- Product 2: Pale Green Bow Wallet -->
+            <!-- Item 2: Pastel Bow Wallet -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Doosri photo (Green Bow Wallet) -->
-                    <img src="product2.jpg" alt="Aesthetic Bow Wallet">
+                    <img src="IMG_6452.jpeg.JPG" alt="Aesthetic Bow Wallet" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Wallet'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Pastel Bow Wallet</h3>
@@ -342,11 +340,10 @@
                 </div>
             </div>
 
-            <!-- Product 3: Doodle Art Bear Sling Bag -->
+            <!-- Item 3: Doodle Art Clutch -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Teesri photo (Doodle Sling Bag) -->
-                    <img src="product3.jpg" alt="Doodle Art Bag">
+                    <img src="IMG_6453.jpeg.JPG" alt="Doodle Art Bag" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Clutch'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Fren Friend Doodle Clutch</h3>
@@ -355,11 +352,10 @@
                 </div>
             </div>
 
-            <!-- Product 4: Off-White Frill Scrunchie -->
+            <!-- Item 4: Luxury Organza Scrunchie -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Chauthi photo (White Scrunchie) -->
-                    <img src="product4.jpg" alt="Frilly Scrunchie">
+                    <img src="IMG_6454.jpeg.JPG" alt="Frilly Scrunchie" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Scrunchie'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Luxury Organza Scrunchie</h3>
@@ -368,11 +364,10 @@
                 </div>
             </div>
 
-            <!-- Product 5: Lazy Panda Black Mug -->
+            <!-- Item 5: Lazy Panda Ceramic Mug -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Paanchvi photo (Black Panda Mug) -->
-                    <img src="product5.jpg" alt="Lazy Panda Mug">
+                    <img src="IMG_6455.jpeg.JPG" alt="Lazy Panda Mug" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Panda+Mug+Black'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Lazy Panda Ceramic Mug</h3>
@@ -381,11 +376,10 @@
                 </div>
             </div>
 
-            <!-- Product 6: Capsule Lipsticks -->
+            <!-- Item 6: Capsule Matte Lipsticks -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Chhati photo (Capsule Matte Lipsticks) -->
-                    <img src="product6.jpg" alt="Capsule Matte Lipsticks">
+                    <img src="IMG_6456.jpeg.JPG" alt="Capsule Matte Lipsticks" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Lipsticks'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Capsule Matte Lipsticks</h3>
@@ -394,11 +388,10 @@
                 </div>
             </div>
 
-            <!-- Product 7: Red Bear / Lotso Keychain -->
+            <!-- Item 7: Strawberry Bear Keychain -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Saatvi photo (Red Bear Keychain) -->
-                    <img src="product7.jpg" alt="Red Lotso Bear Keychain">
+                    <img src="IMG_6457.jpeg.JPG" alt="Red Lotso Bear Keychain" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Bear+Keychain'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Strawberry Bear Keychain</h3>
@@ -407,11 +400,10 @@
                 </div>
             </div>
 
-            <!-- Product 8: Light Green Panda Mug -->
+            <!-- Item 8: Chubby Panda Bamboo Mug -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Aathvi photo (Green Panda Mug) -->
-                    <img src="product8.jpg" alt="Chubby Panda Mug">
+                    <img src="IMG_6458.jpeg.JPG" alt="Chubby Panda Mug" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Panda+Mug+Green'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Chubby Panda Bamboo Mug</h3>
@@ -420,11 +412,10 @@
                 </div>
             </div>
 
-            <!-- Product 9: Purple Floral Sheer Ribbon Bow -->
+            <!-- Item 9: Lilac Dream Floral Bow -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Nauvi photo (Purple Floral Ribbon) -->
-                    <img src="product9.jpg" alt="Purple Floral Bow Clip">
+                    <img src="IMG_6459.jpeg.JPG" alt="Purple Floral Bow Clip" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Floral+Bow'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Lilac Dream Floral Bow</h3>
@@ -433,11 +424,10 @@
                 </div>
             </div>
 
-            <!-- Product 10: Orange Overall Bunny Plush -->
+            <!-- Item 10: Gingham Check Ear Bunny -->
             <div class="product-card">
                 <div class="image-box">
-                    <!-- Dasvi photo (Bunny Plush Toy) -->
-                    <img src="product10.jpg" alt="Cute Bunny Plush">
+                    <img src="IMG_64510.jpeg.JPG" alt="Cute Bunny Plush" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Bunny+Plush'">
                 </div>
                 <div class="product-meta">
                     <h3 class="product-name">Gingham Check Ear Bunny</h3>
@@ -449,8 +439,9 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer block -->
     <footer>
+        <img src="IMG_6376.jpg" alt="YEOMI Footer Logo" class="footer-logo" onerror="this.style.display='none'">
         <div class="insta-handle">
             Follow on Instagram: <a href="https://www.instagram.com/yeomi.in1" target="_blank">@yeomi.in1</a>
         </div>
@@ -463,7 +454,7 @@
         </div>
     </footer>
 
-    <!-- Fixed WhatsApp Button -->
+    <!-- Fixed Instant WhatsApp Trigger -->
     <a href="https://wa.me/919413554253" class="whatsapp-float" target="_blank" title="Chat with YEOMI">
         <i class="fab fa-whatsapp"></i>
     </a>
