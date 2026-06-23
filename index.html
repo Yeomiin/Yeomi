@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YEOMI | Cute Things, Happy Hearts</title>
     
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -78,7 +79,7 @@
             border-radius: 50px;
         }
 
-        /* Hero Section Fixed Responsive */
+        /* Hero Section */
         .hero-section {
             background: white;
             padding: 60px 8% 90px;
@@ -105,45 +106,6 @@
             max-width: 550px;
             margin: 0 auto 25px;
             letter-spacing: 0.5px;
-        }
-
-        /* Categories Styling */
-        .categories {
-            text-align: center;
-            padding: 60px 5%;
-            background: var(--bg-soft-pink);
-        }
-
-        .categories h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            margin-bottom: 25px;
-            color: var(--text-charcoal);
-        }
-
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .category-grid a {
-            padding: 15px 10px;
-            background: #fff;
-            border-radius: 15px;
-            text-decoration: none;
-            color: #333;
-            font-size: 15px;
-            font-weight: 600;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-            border: 1px solid rgba(226, 156, 167, 0.1);
-        }
-
-        .category-grid a:hover {
-            transform: translateY(-3px);
         }
 
         /* Torn border divider style */
@@ -341,12 +303,8 @@
             .hero-section p {
                 font-size: 14px;
             }
-            .category-grid {
-                grid-template-columns: repeat(2, 1fr); /* Mobile par automatic 2 columns */
-                gap: 10px;
-            }
             .product-grid {
-                grid-template-columns: 1fr; /* Mobile par single product column */
+                grid-template-columns: 1fr; /* Mobile par single neat product column */
                 gap: 25px;
             }
         }
@@ -354,22 +312,26 @@
 </head>
 <body>
 
+    <!-- Top Announcement Line -->
     <div class="top-bar">
         🎀 CUTE & AESTHETIC PRODUCTS • PAN INDIA SHIPPING • DM TO ORDER 🎀
     </div>
 
+    <!-- Header -->
     <header>
         <div class="logo-container">
             <img src="IMG_6376.jpg.PNG" alt="YEOMI Logo" class="brand-logo-img" onerror="this.src='https://via.placeholder.com/150x65/fff/e29ca7?text=YEOMI'">
         </div>
     </header>
 
+    <!-- Hero Area -->
     <div class="hero-section">
         <p style="text-transform: uppercase; font-size: 11px; letter-spacing: 3px; color: var(--accent-rose); font-weight: 600; margin-bottom: 5px;">New Arrivals</p>
         <h1>YEOMI - Cute & Aesthetic Lifestyle Products</h1>
         <p>Explore your ultimate destination for high-quality, adorable everyday accessories, bags, and lifestyle essentials.</p>
         <a href="https://wa.me/919413554253" target="_blank" class="action-link">Message To Order</a>
 
+        <!-- Organic layout wave line -->
         <div class="torn-divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,42.4V0Z" class="shape-fill"></path>
@@ -377,18 +339,7 @@
         </div>
     </div>
 
-    <section class="categories">
-        <h2>Shop By Category</h2>
-        <div class="category-grid">
-            <a href="bottles.html">🧴 Bottles</a>
-            <a href="mugs.html">☕ Coffee Mugs</a>
-            <a href="jewellery.html">💍 Jewellery</a>
-            <a href="hair.html">🎀 Hair Accessories</a>
-            <a href="bags.html">👜 Bags</a>
-            <a href="toys.html">🧸 Soft Toys</a>
-        </div>
-    </section>
-
+    <!-- WhatsApp Catalog Callout -->
     <section style="text-align:center; padding:40px 20px; background: white;">
         <h2>🛍️ Shop Our Collection</h2>
         <p style="color:#706566; margin-bottom: 15px;">Browse all YEOMI products on WhatsApp</p>
@@ -399,11 +350,13 @@
         </a>
     </section>
 
+    <!-- Main Dynamic Gallery Block -->
     <div class="grid-container">
         <div class="section-header-tag">Handpicked for you</div>
         <div class="section-main-title">Our Cute Catalog</div>
 
         <div class="product-grid">
+            <!-- Item 1 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6451.jpeg.JPG" alt="Yellow Costume Keychain" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Keychain'">
@@ -415,6 +368,7 @@
                 </div>
             </div>
 
+            <!-- Item 2 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6458.jpeg.JPG" alt="Aesthetic Bow Wallet" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Wallet'">
@@ -426,6 +380,7 @@
                 </div>
             </div>
 
+            <!-- Item 3 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6457.jpeg.JPG" alt="Doodle Art Bag" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Clutch'">
@@ -437,6 +392,7 @@
                 </div>
             </div>
 
+            <!-- Item 4 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_64510.jpeg.JPG" alt="Frilly Scrunchie" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Scrunchie'">
@@ -448,6 +404,7 @@
                 </div>
             </div>
 
+            <!-- Item 5 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6459.jpeg.JPG" alt="Lazy Panda Mug" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Panda+Mug+Black'">
@@ -459,6 +416,7 @@
                 </div>
             </div>
 
+            <!-- Item 6 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6452.jpeg.JPG" alt="Capsule Matte Lipsticks" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Lipsticks'">
@@ -470,6 +428,7 @@
                 </div>
             </div>
 
+            <!-- Item 7 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6456.jpeg.JPG" alt="Red Lotso Bear Keychain" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Bear+Keychain'">
@@ -481,6 +440,7 @@
                 </div>
             </div>
 
+            <!-- Item 8 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6453.jpeg.JPG" alt="Chubby Panda Mug" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Panda+Mug+Green'">
@@ -492,6 +452,7 @@
                 </div>
             </div>
 
+            <!-- Item 9 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6455.jpeg.JPG" alt="Purple Floral Bow Clip" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Floral+Bow'">
@@ -503,6 +464,7 @@
                 </div>
             </div>
 
+            <!-- Item 10 -->
             <div class="product-card">
                 <div class="image-box">
                     <img src="IMG_6454.jpeg.JPG" alt="Cute Bunny Plush" onerror="this.src='https://via.placeholder.com/300x340/fff/e29ca7?text=Bunny+Plush'">
@@ -516,6 +478,7 @@
         </div>
     </div>
 
+    <!-- Footer block -->
     <footer>
         <img src="IMG_6376.jpg" alt="YEOMI Footer Logo" class="footer-logo" onerror="this.style.display='none'">
         <div class="insta-handle">
@@ -530,6 +493,7 @@
         </div>
     </footer>
 
+    <!-- Fixed Instant WhatsApp Trigger -->
     <a href="https://wa.me/919413554253" class="whatsapp-float" target="_blank" title="Chat with YEOMI">
         <i class="fab fa-whatsapp"></i>
     </a>
